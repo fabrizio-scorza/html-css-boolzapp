@@ -1,5 +1,8 @@
 :root{
 --h100:100%;
+--headgray:#EAEAEA;
+--h-bar:70px;
+--footgray:#F3EEEB;
 }
 
 
@@ -46,7 +49,26 @@ body{
 }
 .app__body{
     flex-grow: 1;
-} 
+    display: flex;
+}
+.body__headbar{
+    background-color: var(--headgray);
+    height: var(--h-bar);
+}
+.body__text-area{
+    flex-grow: 1;
+}
+.body__send-area{
+    background-color:var(--footgray) ;
+    height: var(--h-bar);
+}
+
+
+/*UTILITIES********************************************************/
+.column{
+    flex-direction: column;
+}
+
 
 /***************MEDIA QUERIES*************************************/
 
@@ -54,21 +76,31 @@ body{
 @media screen and (min-width: 768px){
 
 
-/***LAYOUT********************************************************/
-    .sidebar{
-        display:block;
-    }
-
-
 /***ASIDE*********************************************************/
     .sidebar{
+        display:flex;
         width: 80px;
     }
+    .sidebar__headbar{
+        background-color: var(--headgray);
+        height: var(--h-bar);
+    }
+    .sidebar__notification{
+        display: none;
+    }
+    .sidebar__search{
+        display: none;
+    }
+    .sidebar__chats{
+        flex-grow: 1;
+        background-color: white;
+    }
+
 }
 
 
-/***************LG - DESKTOP**************************************/
-@media screen and (min-width: 992px){
+/***************XL - DESKTOP**************************************/
+@media screen and (min-width: 1200px){
 
 
 /***LAYOUT********************************************************/
@@ -81,6 +113,18 @@ body{
 /***ASIDE*********************************************************/
     .sidebar{
         width: 380px;
+        background-color: #FAFAFA;
+    }
+    .sidebar__notification{
+        background-color:#8EDAFC ;
+        height: 80px;
+        display: block;
+    }
+    .sidebar__chats{
+        max-width: 95%;
+    }
+    .sidebar__search{
+        display:block;
     }
 }
 
@@ -89,12 +133,6 @@ body{
 .debug #app{
     background-color: blueviolet;
 }
-.debug .container{
-    background-color: chartreuse;
-}
-.debug .sidebar{
-    background-color: chocolate;
-}
-.debug .app__body{
-    background-color: burlywood;
+.debug .body__text-area{
+    background-color: cadetblue;
 }
