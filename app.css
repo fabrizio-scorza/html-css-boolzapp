@@ -1,3 +1,8 @@
+:root{
+--h100:100%;
+}
+
+
 /*RESET**********************************************************/
 * {
 	margin: 0;
@@ -18,4 +23,78 @@ body{
     font-family:"Lato", sans-serif;
 }
 
+
 /*LAYOUT**********************************************************/
+#app{
+    height: 100vh;
+}
+.container{
+    height:var(--h100);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar{
+    display:none;
+}
+
+
+/*APP__BODY********************************************************/
+.height100{
+    height: var(--h100);
+}
+.app__body{
+    flex-grow: 1;
+} 
+
+/***************MEDIA QUERIES*************************************/
+
+/***************MD - TABLET**************************************/
+@media screen and (min-width: 768px){
+
+
+/***LAYOUT********************************************************/
+    .sidebar{
+        display:block;
+    }
+
+
+/***ASIDE*********************************************************/
+    .sidebar{
+        width: 80px;
+    }
+}
+
+
+/***************LG - DESKTOP**************************************/
+@media screen and (min-width: 992px){
+
+
+/***LAYOUT********************************************************/
+    .container{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+/***ASIDE*********************************************************/
+    .sidebar{
+        width: 380px;
+    }
+}
+
+
+/*DEBUG**********************************************************/
+.debug #app{
+    background-color: blueviolet;
+}
+.debug .container{
+    background-color: chartreuse;
+}
+.debug .sidebar{
+    background-color: chocolate;
+}
+.debug .app__body{
+    background-color: burlywood;
+}
