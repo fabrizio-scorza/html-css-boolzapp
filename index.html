@@ -15,13 +15,54 @@
 
     <body class="debug">
         <div id="app">
+            <!-- webapp -->
             <div class="container">
+                <!-- contenitore centrale desktop fullscreen tablet e smartphone -->
                 <div class="row height100">
+                    <!-- riga con i due elementi la sidebar e il corpo dell'app -->
                     <aside class="sidebar column">
-                        <div class="sidebar__headbar">sidehead</div>
-                        <div class="sidebar__notification">notifiche</div>
+                        <!-- sidebar con 4 elementi headbar notifiche ricerca e chat -->
+                        <div class="sidebar__headbar">
+                            <!-- headbar con immagine profilo e bottoni con varie funzioni -->
+                            <img src="img/avatar_io.jpg" alt="">
+                            <div class="cta-link">
+                                <!-- link calltoaction -->
+                                <a href="">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>                         
+                                <a href="">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar__notification">
+                           <div>
+                                <a class="btn" href="">
+                                    <i class="fa-regular fa-bell-slash"></i>
+                                </a>
+                            </div>
+                            <div class="notification__text">
+                                <p class="bold">Ricevi notifiche di nuovi messaggi</p>
+                                <a class="text-gray" href="">Attiva notifiche desktop</a>
+                            </div>
+
+                        </div>
                         <div class="sidebar__search">cerca</div>
-                        <div class="sidebar__chats">lista contatti</div>
+                        <div class="sidebar__chats">
+                            <ul>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                                <li>fotoprofilo</li>
+                            </ul>
+                        </div>
                     </aside>
                     <div class="app__body column">
                         <div class="body__headbar">bodyhead</div>
