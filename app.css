@@ -51,6 +51,7 @@ body{
     color: #6D7376;
 }
 .body__text-area{
+    background-image: url(./img/mine.jpg);
     flex-grow: 1;
 }
 .body__send-area{
@@ -245,10 +246,4 @@ body{
         font-size: 14px;
         color: #B7B9BB ;
     }
-}
-
-
-/*DEBUG**********************************************************/
-.debug .body__text-area{
-    background-color: cadetblue;
 }
