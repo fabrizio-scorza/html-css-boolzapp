@@ -20,7 +20,7 @@
                 <!-- contenitore centrale desktop fullscreen tablet e smartphone -->
                 <div class="row h100">
                     <!-- riga con i due elementi la sidebar e il corpo dell'app -->
-                    <aside class="sidebar column">
+                    <aside class="sidebar column h100">
                         <!-- sidebar con 4 elementi headbar notifiche ricerca e chat -->
                         <div class="headbar">
                             <div class="card__head">
@@ -62,7 +62,7 @@
                                 <i class="fa-solid fa-magnifying-glass"></i> Cerca o inizia una nuova chat
                             </p>   
                         </div>
-                        <div class="sidebar__chats">
+                        <div class="sidebar__chats scroll">
                             <!-- lista contatti con immagine e nome -->
                             <ul>
                                 <li class="contacts">
@@ -173,7 +173,35 @@
                         </div>
                     </aside>
                     <main class="app__body column">
-                        <div class="body__headbar">bodyhead</div>
+                        <div class="headbar">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="./img/avatar_1.jpg" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <strong>Michele</strong>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                            </div> 
+                            <menu class="cta-link">
+                                <!-- link calltoaction -->
+                                <li>
+                                    <a href="">
+                                        <i class="fa-solid fa-circle-notch"></i>
+                                    </a>
+                                </li>
+                                <li>                                    
+                                    <a href="">
+                                        <i class="fa-solid fa-message"></i>
+                                    </a>
+                                </li>
+                                <li>                                                       
+                                    <a href="">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                </li>
+                            </menu>
+                        </div>
                         <div class="body__text-area">bodypage</div>
                         <div class="body__send-area">bodyinput</div>
                     </main>
