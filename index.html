@@ -18,57 +18,165 @@
             <!-- webapp -->
             <div class="container">
                 <!-- contenitore centrale desktop fullscreen tablet e smartphone -->
-                <div class="row height100">
+                <div class="row h100">
                     <!-- riga con i due elementi la sidebar e il corpo dell'app -->
                     <aside class="sidebar column">
                         <!-- sidebar con 4 elementi headbar notifiche ricerca e chat -->
-                        <div class="sidebar__headbar">
-                            <!-- headbar con immagine profilo e bottoni con varie funzioni -->
-                            <img src="img/avatar_io.jpg" alt="">
-                            <div class="cta-link">
-                                <!-- link calltoaction -->
-                                <a href="">
-                                    <i class="fa-solid fa-circle-notch"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>                         
-                                <a href="">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
+                        <div class="headbar">
+                            <div class="card__head">
+                                <!-- headbar con immagine profilo e bottoni con varie funzioni -->
+                                <img src="img/avatar_io.jpg" alt="">
                             </div>
+                                <menu class="cta-link">
+                                <!-- link calltoaction -->
+                                <li>
+                                    <a href="">
+                                        <i class="fa-solid fa-circle-notch"></i>
+                                    </a>
+                                </li>
+                                <li>                                    
+                                    <a href="">
+                                        <i class="fa-solid fa-message"></i>
+                                    </a>
+                                </li>
+                                <li>                                                       
+                                    <a href="">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                </li>
+                            </menu>
                         </div>
                         <div class="sidebar__notification">
-                           <div>
-                                <a class="btn" href="">
-                                    <i class="fa-regular fa-bell-slash"></i>
-                                </a>
+                            <!-- notifiche con icona e attiva notifiche  -->
+                            <div class="btn">
+                                <i class="fa-regular fa-bell-slash"></i>
                             </div>
                             <div class="notification__text">
                                 <p class="bold">Ricevi notifiche di nuovi messaggi</p>
                                 <a class="text-gray" href="">Attiva notifiche desktop</a>
                             </div>
-
                         </div>
-                        <div class="sidebar__search">cerca</div>
+                        <div class="sidebar__search">
+                            <!-- barra di ricerca momentaneamente p per inserire l'icona -->
+                            <p class="searchbox"> 
+                                <i class="fa-solid fa-magnifying-glass"></i> Cerca o inizia una nuova chat
+                            </p>   
+                        </div>
                         <div class="sidebar__chats">
+                            <!-- lista contatti con immagine e nome -->
                             <ul>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
-                                <li>fotoprofilo</li>
+                                <li class="contacts">
+                                    <div class="card">
+                                        <!-- contatto Michele -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_1.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Michele</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>16:15</p>
+                                </li>
+                                <li class="contacts">                                    
+                                    <div class="card">
+                                        <!-- contatto Fabio -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_2.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Fabio</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>16:05</p>                                    
+                                </li>
+                                <li class="contacts">                                   
+                                    <div class="card">
+                                        <!-- contatto Samuele -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_3.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Samuele</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>16:03</p>
+                                </li>
+                                <li class="contacts">
+                                    <div class="card">
+                                        <!-- contatto Alessandro B. -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_4.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Alessandro B.</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>15:50</p>
+                                </li>
+                                <li class="contacts">                                  
+                                    <div class="card">
+                                        <!-- contatto Alessandro L. -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_5.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Alessandro L.</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>15:45</p>            
+                                </li>
+                                <li class="contacts">                               
+                                    <div class="card">
+                                        <!-- contatto Claudia -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_6.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Claudia</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>15:40</p>                                    
+                                </li>
+                                <li class="contacts">
+                                    <div class="card">
+                                        <!-- contatto Federico -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_7.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Federico</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>15:22</p>
+                                </li>
+                                <li class="contacts">
+                                    <div class="card">
+                                        <!-- contatto Davide -->
+                                        <div class="card__head">
+                                            <img src="./img/avatar_8.jpg" alt="">
+                                        </div>
+                                        <div class="card__body">
+                                            <strong>Davide</strong>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>                                        
+                                    </div>
+                                    <p>15:15</p>
+                                </li class="contacts">
                             </ul>
                         </div>
                     </aside>
-                    <div class="app__body column">
+                    <main class="app__body column">
                         <div class="body__headbar">bodyhead</div>
                         <div class="body__text-area">bodypage</div>
                         <div class="body__send-area">bodyinput</div>
-                    </div>
+                    </main>
                 </div>
             </div>
         </div>

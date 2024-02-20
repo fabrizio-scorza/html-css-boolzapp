@@ -12,7 +12,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-ul, ol{
+ul, ol,menu{
 	list-style: none;
 }
 a {
@@ -30,6 +30,7 @@ body{
 /*LAYOUT**********************************************************/
 #app{
     height: 100vh;
+    background: linear-gradient(180deg, rgba(77,146,136,1) 182.5px , rgba(219,219,211,1) 182.5px);
 }
 .container{
     height:var(--h100);
@@ -44,9 +45,6 @@ body{
 
 
 /*APP__BODY********************************************************/
-.height100{
-    height: var(--h100);
-}
 .app__body{
     flex-grow: 1;
     display: flex;
@@ -65,6 +63,9 @@ body{
 
 
 /*UTILITIES********************************************************/
+.h100{
+    height: var(--h100);
+}
 .column{
     flex-direction: column;
 }
@@ -79,18 +80,19 @@ body{
 
 
 /***COMPONENTS********************************************************/
-img{
-    height: 56px;
-    border-radius: 50%;
-}
+    .card__head img{
+        height: 56px;
+        border-radius: 50%;
+    }
 
 
 /***ASIDE*********************************************************/
     .sidebar{
         display:flex;
-        width: 80px;
+        width: 82px;
+        flex-shrink: 0;
     }
-    .sidebar__headbar{
+    .headbar{
         display: flex;
         background-color: var(--headgray);
         height: var(--h-bar);
@@ -111,7 +113,14 @@ img{
         flex-grow: 1;
         background-color: white;
     }
-
+    .card{
+        display: flex;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 15px;
+    }
+    .card__body{
+        display: none;
+    }
 }
 
 
@@ -121,7 +130,7 @@ img{
 
 /***LAYOUT********************************************************/
     #app{
-        padding: 2.5% 0;
+        padding: 32px 0;
     } 
     .container{
         width: 75%;
@@ -129,19 +138,21 @@ img{
     }
 
 
-/***ASIDE*********************************************************/
-    .sidebar{
-        width: 380px;
-        background-color: #FAFAFA;
-    }
-    .sidebar__headbar{
-        justify-content: space-between;
-        padding: 0 5%;
-    }
+/***COMPONENTS*****************************************************/
     .cta-link{
-        display: block;
+        display: flex;
         font-size: 26px;
         color: #B1B1B1;
+    }
+
+/***ASIDE*********************************************************/
+    .sidebar{
+        width: 370px;
+        background-color: #FAFAFA;
+    }
+    .headbar{
+        justify-content: space-between;
+        padding: 0 15px;
     }
     .cta-link a{
         padding-left:15px;
@@ -151,13 +162,12 @@ img{
         height: 80px;
         display: flex;
         align-items: center;
-        padding: 0 5%;
+        padding: 0 15px;
         gap: 18px;
     }
     .notification__text p{
         font-size: 14px;
     }
-
     .notification__text a {
        font-size: 12px;
        text-decoration: underline;
@@ -174,19 +184,47 @@ img{
         line-height: 56px;
         border-radius: 50%;  
     }
+    .sidebar__search{
+        display:block;
+        padding: 8px;
+    }
+    .searchbox{
+        background-color: white;
+        width: 95%;
+        color:#757575;
+        padding: 8px;
+        font-size: 12px;
+    }
+    .searchbox i{
+        padding-right: 15px;
+    }
     .sidebar__chats{
         max-width: 95%;
     }
-    .sidebar__search{
-        display:block;
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+    }
+     .contacts > p{
+        font-size: 12px;
+        color:#B7B9BB ;
+        padding: 20px;
+    }
+    .card{
+        gap: 15px;
+        align-items: center;
+    }
+    .card__body{
+        display: block;
+    }
+    .card__body p{
+        font-size: 14px;
+        color: #B7B9BB ;
     }
 }
 
 
 /*DEBUG**********************************************************/
-.debug #app{
-    background-color: blueviolet;
-}
 .debug .body__text-area{
     background-color: cadetblue;
 }
